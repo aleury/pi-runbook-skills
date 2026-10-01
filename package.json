@@ -1,0 +1,10 @@
+{
+  "name": "pi-runbook-skills",
+  "version": "0.1.0",
+  "description": "Pi skills for finding relevant runbooks from error descriptions and stacktraces.",
+  "keywords": ["pi-package", "pi", "skills", "runbooks"],
+  "license": "MIT",
+  "pi": {
+    "skills": ["./skills"]
+  }
+}
