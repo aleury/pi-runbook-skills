@@ -10,7 +10,7 @@ pi install git:github.com/aleury/pi-runbook-skills@main
 
 ## Requirements
 
-For the Jev-powered ranking path, configure Pi with codemode and set a TypeSafe API key:
+For the Jev-powered ranking path, configure Pi with codemode and make a TypeSafe API key available to the Pi process:
 
 ```json
 {
@@ -18,9 +18,7 @@ For the Jev-powered ranking path, configure Pi with codemode and set a TypeSafe 
 }
 ```
 
-```sh
-set -Ux TYPESAFE_API_KEY "your_key_here"
-```
+Pi expects the key in the `TYPESAFE_API_KEY` environment variable. Set it using the environment management approach for your shell, operating system, or secret manager.
 
 The skill still works without Jev by ranking candidates from filenames, headings, and snippets.
 
